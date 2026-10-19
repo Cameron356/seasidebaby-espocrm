@@ -1,0 +1,52 @@
+/* Seaside theme for the office: EspoCRM's light theme in the brand colors (Brand/style-guide.md).
+   Installed to client/custom/css/seaside.css by crm/install.py; theme metadata in model.py. */
+@import url("../../css/espo/light.css");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Nunito:wght@400;600;700&display=swap");
+
+:root {
+  --font-family: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text-color: #4A4440;
+  --body-bg: #FBF6EE;                 /* Sand */
+  --panel-bg: #FFFFFF;
+  --default-heading-bg: #E3F2EE;      /* Sea Foam */
+  --border-radius: 12px;
+  --border-radius-small: 8px;
+
+  --navbar-bg: #E3F2EE;
+  --navbar-inverse-bg: #E3F2EE;
+  --navbar-inverse-border: #D3E6E0;
+  --navbar-link-color: #4A4440;
+  --navbar-inverse-link-color: #4A4440;
+  --navbar-inverse-color: #4A4440;
+  --navbar-link-icon-color: #2F6F86;
+  --navbar-inverse-link-icon-color: #2F6F86;
+  --navbar-inverse-link-icon-hover-color: #255A6D;
+  --navbar-link-hover-bg: #D3E6E0;
+  --navbar-inverse-link-hover-bg: #D3E6E0;
+  --navbar-link-hover-color: #2F6F86;
+  --navbar-inverse-link-hover-color: #2F6F86;
+  --navbar-link-active-bg: #A9D6E5;   /* Baby Sea Blue */
+  --navbar-inverse-link-active-bg: #A9D6E5;
+
+  --brand-primary: #2F6F86;           /* Tide Blue: buttons and links */
+  --link-color: #2F6F86;
+  --btn-primary-bg: #2F6F86;
+  --btn-primary-border: #2F6F86;
+  --btn-primary-color: #FFFFFF;
+  --btn-primary-hover-bg: #255A6D;
+  --btn-primary-hover-border: #255A6D;
+  --btn-primary-active-bg: #255A6D;
+  --btn-primary-active-border: #1E4A5A;
+}
+
+/* Headings in the brand serif, like the website. */
+.page-header h3, .header-title, .panel-heading .panel-title, .modal-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+.page-header h3, .header-title { font-size: 1.7em; }
+.panel-heading .panel-title { font-size: 1.15em; }
+
+/* The logo in the side bar: the full lockup, on Sea Foam. */
+.navbar-brand img, .navbar .logo img, img.logo { max-height: 56px; width: auto; }
