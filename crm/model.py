@@ -620,6 +620,7 @@ def build():
         files["custom/Espo/Custom/EntryPoints/%s.php" % ep] = gen(open(os.path.join(here, "php", ep + ".php")).read())
     files["custom/Espo/Custom/Api/SeasideBabyArrived.php"] = gen(open(os.path.join(here, "php", "SeasideBabyArrived.php")).read())
     files["custom/Espo/Custom/Api/SeasideMoreHours.php"] = gen(open(os.path.join(here, "php", "SeasideMoreHours.php")).read())
+    files["custom/Espo/Custom/Seaside/Footer.php"] = open(os.path.join(here, "php", "SeasideFooter.php")).read()
     # Hooks (php/Hooks/<Entity>/<Name>.php) and office-side JavaScript (client/<kind>/<name>.js), copied as they are.
     for sub, dest in (("php/Hooks", "custom/Espo/Custom/Hooks"), ("client", "client/custom/src")):
         base = os.path.join(here, sub)

@@ -206,7 +206,7 @@ class FamilyPage implements EntryPoint
             . '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">'
             . '<style>' . self::CSS . '</style></head><body><header><div class="brand">Seaside Baby Nurturer</div>'
             . '<div class="tag-line">Compassionate care · Peace of mind</div></header><main>' . $body . '</main>'
-            . '<footer>Seaside Baby Nurturer · Tampa Bay, Florida</footer></body></html>';
+            . '<footer>Seaside Baby Nurturer · Tampa Bay, Florida' . \Espo\Custom\Seaside\Footer::html() . '</footer></body></html>';
     }
 
     private const CSS = <<<'CSS'
